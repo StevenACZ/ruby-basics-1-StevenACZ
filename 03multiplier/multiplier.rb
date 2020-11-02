@@ -9,3 +9,23 @@
 
 # Use some looping technique to print each multiple followed by a comma.
 # The last one should be preceded by "and"
+
+num = gets.to_i
+
+while num <= 0
+  print("> Please put a greater number than 0: ")
+  num = gets.to_i
+end
+
+print("The first 20 multiples of #{num} are: ")
+
+if num.positive?
+  x = 1
+  arr = []
+  while x <= 20
+    arr.push(num * x)
+    x += 1
+  end
+
+  print(arr.join(", ").tap{|s| s[s.rindex(", "), 2] = ", and "})
+end
