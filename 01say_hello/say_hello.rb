@@ -4,7 +4,7 @@
 # If the user enters nothing, print "No one to say hello to. :cry:"
 name = gets
 
-if name.strip.length != 0
+if !name.strip.empty?
   puts "Hello #{name}! Welcome to the Ruby module."
 else
   puts "No one to say hello to. :cry:"
