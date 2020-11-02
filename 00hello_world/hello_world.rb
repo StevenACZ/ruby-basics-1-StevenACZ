@@ -1,2 +1,2 @@
 # Print "Hello World!"" to the console :)
-Print "Hello World!"
+print("Hello World!")
