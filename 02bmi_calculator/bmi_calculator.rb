@@ -6,13 +6,15 @@
 
 # If the result is less than 18.5 print "You are underweight, add more potato to the broth."
 
-print("Weight (kg)")
-weight = gets
-print("Height (m)")
-height = gets
+print("How much do you weigh? (don't lie)\n")
+weight = gets.to_f
+print("How tall are you? (barefoot)\n")
+height = gets.to_f
 
-BMI = ((weight.to_f / height.to_f**2) * 100).round / 100.0
+BMI = ((weight / height**2) * 100).round / 100.0
 
-print(BMI)
+print("Right now your BMI is #{BMI}\n")
 
-BMI < 18.5 && print("You are underweight, add more potato to the broth.")
+BMI < 18.5 && print("You are underweight, add more potato to the broth")
+(BMI >= 18.5 && BMI < 25) && print("You have a normal weight, I have healthy envy of you")
+BMI > 25 && print("You are overweight, I know, the pandemic has affected us all")
