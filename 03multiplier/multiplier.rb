@@ -9,11 +9,13 @@
 
 # Use some looping technique to print each multiple followed by a comma.
 # The last one should be preceded by "and"
-print("My name is Multiplier and I will give you the first 20 multiples of any number\nChoose a number greater than 0: ")
+value = "My name is Multiplier and I will give you the first 20 multiples of any number"
+
+print("#{value}\nChoose a number greater than 0: ")
 num = gets.to_i
 
 while num <= 0
-  print("My name is Multiplier and I will give you the first 20 multiples of any number\nChoose a number greater than 0: ")
+  print("#{value}\nChoose a number greater than 0: ")
   num = gets.to_i
 end
 
