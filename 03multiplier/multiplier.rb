@@ -27,5 +27,5 @@ if num.positive?
     x += 1
   end
 
-  print(arr.join(", ").tap{|s| s[s.rindex(", "), 2] = ", and "})
+  print(arr.join(", ").tap { |s| s[s.rindex(", "), 2] = ", and " })
 end
