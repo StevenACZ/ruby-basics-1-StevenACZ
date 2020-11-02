@@ -6,15 +6,13 @@
 
 # If the result is less than 18.5 print "You are underweight, add more potato to the broth."
 
-puts "Weight (kg)"
+print("Weight (kg)")
 weight = gets
-puts "Height (m)"
+print("Height (m)")
 height = gets
 
 BMI = ((weight.to_f / height.to_f**2) * 100).round / 100.0
 
-puts BMI
-
-if BMI < 18.5
-  puts "You are underweight, add more potato to the broth."
-end
+print(BMI)
+ 
+BMI < 18.5 && print("You are underweight, add more potato to the broth.")
