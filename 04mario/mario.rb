@@ -21,15 +21,3 @@ while x <= height
   end
   x += 1
 end
-
-
-# y = height - 1
-# for x in 1..height
-#   while y >= 0
-#     print(" " * y)
-#     print("#" * x)
-#     print("\n")
-#     x += 1
-#     y -= 1
-#   end
-# end
