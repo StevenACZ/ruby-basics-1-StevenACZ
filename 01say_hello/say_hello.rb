@@ -2,10 +2,10 @@
 
 # If the user enters some text like "Monica", print "Hello Monica! Welcome to the Ruby module."
 # If the user enters nothing, print "No one to say hello to. :cry:"
-name = gets
+name = gets.to_s.strip
 
-if !name.strip.empty?
-  puts "Hello #{name}! Welcome to the Ruby module."
+if !name.empty?
+  print("Hello #{name}! Welcome to the Ruby module.")
 else
-  puts "No one to say hello to. :cry:"
+  print("No one to say hello to. :cry:")
 end
